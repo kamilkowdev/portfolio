@@ -1,1 +1,199 @@
 //     font-family: 'Montserrat', sans-serif; / font-family: 'Roboto', sans-serif;
+
+@import 'global.scss', 'variables.scss';
+
+//header 
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 400px;
+    background-color: $color-main;
+    padding: 1rem;
+
+    .socialmedia {
+        background-color: $dark;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 2;
+        padding: 1rem;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    nav {
+        @include menu;  
+
+    }
+
+    .header-title {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        display: flex;
+        width: 50%;
+
+        font-size: clamp(1.3rem, 2vw, 2.125rem);
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+
+// main
+main {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    }
+
+    .about {
+        .about__img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    
+        .about__text {
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .btns {            
+            @include btns;
+
+            .btn {
+                @include btn;
+            }
+            .lighter {
+                @include lighter;
+            }
+        }
+    }
+
+    .works {
+        @include flex-center;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            .card__img {
+                @include flex-center;
+                img {
+                    width: 100%;
+                    background: linear-gradient(to bottom, $color-main, transparent 90%);
+                    border-radius: 30px;
+                    padding: .35rem .30rem;
+                    margin: 0 auto;
+                }
+            }
+            &__text {
+                text-align: left;
+                font-size: 0.875rem;
+                font-weight: 300;
+                p {
+                    margin: 0 auto;
+                }
+            }
+            &__btn {
+            @include btns;
+            justify-content: center;
+                .btn {
+                    @include btn;
+                    width: 100px;
+                    height: 35px;
+                    font-size: .8rem;
+                }
+                .lighter {
+                    @include lighter;
+                    
+                }
+            }
+        }
+    }
+
+
+    .skills {
+        text-align: center;
+
+        h2 {
+            margin-top: 0;
+        }
+            .box {
+                margin: 2rem 0;
+                padding: 0 1rem;
+
+                img {
+                    margin-bottom: 1rem;
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 0.875rem;
+                    font-weight: 300;
+                }
+            }
+    }
+
+}
+
+//foter
+
+.footer {
+    @include flex-center;
+    flex-direction: column;
+    background-color: $color-main;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.2rem;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            text-align: center;
+            color: $f-clr-main;
+            line-height: 160%;
+        }
+        p {
+            margin: 1rem 0;
+            color: $f-clr-main;
+            text-transform: uppercase;
+        }
+    }
+
+    .footer-btn {
+        @include btns;
+        max-width: 100%;
+            .btn {
+                @include btn;
+                background-color: rgba(67, 184, 151, .3);
+
+            }
+            .lighter {
+                @include lighter;
+                background-color: rgba(67, 184, 151, .3);
+            }
+        }
+}

@@ -7,25 +7,35 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84d4e0b2a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="socialmedia">
+        <!-- <div class="socialmedia">
             <a href="#"><img src="/img/social_in.png" alt="socialmedia icon linkedin"></a>
             <a href="#"><img src="/img/social_mail.png" alt="socialmedia icon gmail"></a>
             <a href="#"><img src="/img/social_git.png" alt="socialmedia icon github"></a>
-        </div>
+        </div> -->
         <nav>
-            <div class="nav-top">
-                <div class="nav-top__links">
-                     <a href="#">works</a>
-                     <a href="#">about</a>
-                     <a href="#">skills</a>
-                     <a href="#">contact</a>
-                </div>
-            </div>
+            <button class="hamburger">
+                <span class="hamburger__box">
+                  <span class="hamburger__inner"></span>
+                </span>
+              </button>
+              <div class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item"><a href="">About me</a></li>
+                  <li class="navigation__item"><a href="">Works</a></li>
+                  <li class="navigation__item"><a href="">Contact</a></li>
+                  <div class="socialmedia">
+                    <a href="#"><img src="/img/social_in.png" alt="socialmedia icon linkedin"></a>
+                    <a href="#"><img src="/img/social_mail.png" alt="socialmedia icon gmail"></a>
+                    <a href="#"><img src="/img/social_git.png" alt="socialmedia icon github"></a>
+                  
+                </ul>
+              </div>
         </nav>
         <div class="header-title">
             <h1>Kamil Kowalczyk</h1>
@@ -33,19 +43,21 @@
     </header>
     <main>
         <section class="about">
+            <div class="about__img"><img src="/img/kamilkowalczyk.png" alt="kamil kowalczyk image"></div>
             <div class="about__text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam deleniti numquam modi officia dolorum porro voluptate odit ducimus cumque.</p>
-                <div class="about btn">
+                
+                <p>My name is Kamil Kowalczyk and from an early age I spend my free time building things on the Internet. I love endurance sports and I am happy to help others.</p>
+                <div class="about btns">
                     <a href="#" class="btn"><img src="/img/btn_git.png" alt="button image github">git</a>
-                    <a href="#" class="btn lighter">download resume</a>
+                    <a href="#" class="btn lighter" >download resume</a>
                 </div>
             </div>
-            <div class="about__img"><img src="/img/kamilkowalczyk.png" alt="kamil kowalczyk image"></div>
         </section>
         <section class="works">
             <h2>works</h2>
             <div class="card">
-                <img src="#" alt="card-image">
+                <div class="card__img">
+                <img src="/img/project.jpg" alt="card-image"></div>
                     <div class="card__text">
                         <h2>title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit neque totam adipisci, repellat nisi quae eaque atque eum facilis.</p>
@@ -56,7 +68,7 @@
                     </div>
             </div>
             <div class="card">
-                <img src="#" alt="card-image">
+                <div class="card__img"><img src="/img/project.jpg" alt="cardimage"></div>
                     <div class="card__text">
                         <h2>title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit neque totam adipisci, repellat nisi quae eaque atque eum facilis.</p>
@@ -70,34 +82,33 @@
         <section class="skills">
             <h2>Skills</h2>
             <div class="__content">
-                <div class="__box">
+                <div class="box">
                     <img src="/img/skills_html.png" alt="html icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor veniam et tempore? Ducimus fugiat reprehenderit, quas recusandae consequuntur vero?</p>
                 </div>
-                <div class="__box">
+                <div class="box">
                     <img src="/img/skills_css.png" alt="css icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor veniam et tempore? Ducimus fugiat reprehenderit, quas recusandae consequuntur vero?</p>
                 </div>
-                <div class="__box">
+                <div class="box">
                     <img src="/img/skills_scss.png" alt="scss icon">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor veniam et tempore? Ducimus fugiat reprehenderit, quas recusandae consequuntur vero?</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-    <div class="footer__content">
-        <h1>LET’S BUILD SOMETHING TOGETHER</h1>
-        <p>[icon]kamilkoww@gmail.com</p>
+    <footer class="footer">
+    <div class="content">
+        <h2>LET’S BUILD SOMETHING TOGETHER</h2>
+        <p>kamilkoww@gmail.com</p>
     </div>
-    <div class="footer btn">
+    <div class="footer-btn">
         <a href="#" class="btn"><img src="/img/btn_git.png" alt="button image github">git</a>
         <a href="#" class="btn lighter">download resume</a>
-    </div>
-    <p>kamilkoww 2021</p>
+        </div>
 
     </footer>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>

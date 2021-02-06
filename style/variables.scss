@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+p,a,span {
+    font-family: 'Roboto', sans-serif;
+}
+
+// main clr
+$color-main: #3A7866; 
+
+// fonts clr
+$f-clr-main: #fff;
+$f-clr-title: #0e0e0e;
+
+// btn clr
+$clr-btn: #3A7866;
+$clr-btn-lighter:  rgba($clr-btn, 0.7);
+
+// menu
+$dark: #171717;
+$light: #FFFFFF;
+
+
+// section about 
