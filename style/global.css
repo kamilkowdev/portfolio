@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=global.css.map */
+.body--noscroll {
+  overflow: hidden;
+}
+/*# sourceMappingURL=global.css.map */
