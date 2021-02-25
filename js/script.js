@@ -4,7 +4,7 @@ const nav = document.querySelector('.navigation');
 
 const handleClick = () => {
   hamburger.classList.toggle('hamburger--active');
-  body.classList.toggle('body--noscroll');
+  // body.classList.toggle('body--noscroll');
   nav.classList.toggle('navigation--active');
 }
 
